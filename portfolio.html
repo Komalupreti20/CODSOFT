@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Komal Upreti | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #1e1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(255, 255, 255, 0.03);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00bfff;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #00bfff;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 10%;
+      gap: 40px;
+      background-color: #121212;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #cccccc;
+    }
+
+    .hero img {
+      flex: 1;
+      max-width: 400px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 187, 255, 0.2);
+      animation: fadeZoom 1.5s ease-in;
+    }
+
+    section {
+      padding: 60px 10%;
+    }
+
+    .about,
+    .projects,
+    .contact {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      padding: 30px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #00bfff;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1e1e1e;
+      color: #888;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeZoom {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Komal Upreti</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm Komal 👋</h1>
+      <p>I'm a passionate tech enthusiast exploring the world of web development. This portfolio is a glimpse of my learning journey during the CodSoft Internship.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&w=800&q=80" alt="Professional Desk Setup">
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I’m currently pursuing MCA and building projects to improve my web development skills. I enjoy creating clean, user-friendly designs with HTML, CSS, and JavaScript. I also love to learn new technologies and solve real-world problems.</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>🌐 Landing Page using HTML & CSS (Internship Task)</li>
+      <li>💻 To-Do List Web App (Local Storage + JS)</li>
+      <li>📧 Contact Form using Formspree Integration</li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <strong>komalupreti20@gmail.com</strong></p>
+    <p>connect me on linkedin  : <strong>https://www.linkedin.com/in/komal-upreti-986b6026b</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Komal Upreti. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
